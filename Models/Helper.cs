@@ -7,9 +7,6 @@ namespace D_of_C_Blog.Models
 {
     public class Helpers
     {
-        public readonly string MyPassword = "frank12345@!";
-
-        public static readonly string GPassword = "fr3448687";
 
         public static string[] ExtractAllTags(string s)
         {

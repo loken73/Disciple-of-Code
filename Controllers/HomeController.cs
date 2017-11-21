@@ -81,7 +81,7 @@ namespace D_of_C_Blog.Controllers
 				client.AuthenticationMechanisms.Remove ("XOAUTH2");
 
 				// Note: only needed if the SMTP server requires authentication
-				client.Authenticate ("frank.rodriguez.dev@gmail.com", Helpers.GPassword);
+				client.Authenticate ("frank.rodriguez.dev@gmail.com", Password.GPassword);
 
 				client.Send (mail);
                 Console.WriteLine("The mail has been sent successfully !!"); 
