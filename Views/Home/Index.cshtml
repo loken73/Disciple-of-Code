@@ -1,0 +1,55 @@
+﻿@model PaginatedList<Post>
+
+<div id="header">
+    <div class="site-heading">
+        <div id="blog-title">
+            Disciple of Code
+        </div>
+        <div id="title-divider"></div>
+        <div id="title-description">
+            A coding blog from an aspiring developer.
+        </div>
+    </div>
+</div>
+<div id="index-body">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            @foreach (var item in Model)
+            {
+                <div class="post-preview">
+                        <a asp-controller="Post" asp-action="IndividualPost" asp-route-postName="@(item.Title)">
+                            <div>
+                                <h2 class="preview-title">@item.Title</h2>
+                                <h3 class="preview-description">@item.ShortDescription</h3>
+                            </div>
+                        </a>
+                    <p class="post-meta">Posted by <span>Frank Rodriguez</span> on @item.TimeCreated.ToString("F")</p>
+                    @foreach (var tag in item.PostTags)
+                    {
+                        <span class="tags">@tag.Tag.Name</span>
+                    }
+                    <hr>
+                </div>
+            }
+            <div class="row links-row">
+                @{  
+                    if (Model.HasNextPage)
+                    {
+                        <a asp-action="Index"
+                            asp-route-pageNumber="@(Model.PageIndex + 1)">Older Posts
+                        </a>
+                    }
+                }
+
+                @{  
+                    if (Model.HasPreviousPage)
+                    {
+                        <a asp-action="Index"
+                            asp-route-pageNumber="@(Model.PageIndex - 1)">Newer Posts
+                        </a>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+﻿@model ContactFormViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+
+<div id="headerContact">
+    <div class="site-heading">
+        <div id="blog-title">
+            Contact Me
+        </div>
+        <div id="title-divider"></div>
+        <div id="title-description">
+            Have Questions? I have answers (maybe).
+        </div>
+    </div>
+</div>
+    <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <p id="contactTitle" style="color: #333; font-size: 24px; font-family: Lora,'Times New Roman',serif;">Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
+            <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+            <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+            <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+            <form asp-controller="Home" asp-action="Contact" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" name="sentMessage" id="contactForm">
+                <div class="control-group">
+                    <!--<div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>-->
+
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" type="text" class="form-control floating-label-form-group" placeholder="Name">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" type="email" class="form-control floating-label-form-group" placeholder="Email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Message"></label>
+                        <textarea asp-for="Message" rows="5" class="form-control floating-label-form-group" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-default">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+C:\Users\f29pl\Desktop\D_of_C_Blog\bin\Debug\netcoreapp2.0\app.db
+C:\Users\f29pl\Desktop\D_of_C_Blog\bin\Debug\netcoreapp2.0\D_of_C_Blog.deps.json
+C:\Users\f29pl\Desktop\D_of_C_Blog\bin\Debug\netcoreapp2.0\D_of_C_Blog.runtimeconfig.json
+C:\Users\f29pl\Desktop\D_of_C_Blog\bin\Debug\netcoreapp2.0\D_of_C_Blog.runtimeconfig.dev.json
+C:\Users\f29pl\Desktop\D_of_C_Blog\bin\Debug\netcoreapp2.0\D_of_C_Blog.dll
+C:\Users\f29pl\Desktop\D_of_C_Blog\bin\Debug\netcoreapp2.0\D_of_C_Blog.pdb
+C:\Users\f29pl\Desktop\D_of_C_Blog\obj\Debug\netcoreapp2.0\D_of_C_Blog.csproj.CoreCompileInputs.cache
+C:\Users\f29pl\Desktop\D_of_C_Blog\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\f29pl\Desktop\D_of_C_Blog\obj\Debug\netcoreapp2.0\D_of_C_Blog.AssemblyInfoInputs.cache
+C:\Users\f29pl\Desktop\D_of_C_Blog\obj\Debug\netcoreapp2.0\D_of_C_Blog.AssemblyInfo.cs
+C:\Users\f29pl\Desktop\D_of_C_Blog\obj\Debug\netcoreapp2.0\D_of_C_Blog.dll
+C:\Users\f29pl\Desktop\D_of_C_Blog\obj\Debug\netcoreapp2.0\D_of_C_Blog.pdb

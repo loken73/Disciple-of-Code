@@ -1,0 +1,35 @@
+@model CreatePostViewModel
+
+@{
+    Layout = "~/Views/Shared/_admin.cshtml";
+}
+
+<div id="create-post" class="container">
+    <form asp-controller="Post" asp-action="CreatePost" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+
+        <div class="form-group">
+            <label asp-for="PostTitle"></label>
+            <input asp-for="PostTitle" type="text" class="form-control create-post-form" id="" placeholder="Title">
+            <span asp-validation-for="PostTitle" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="PostShortDescription"></label>
+            <input asp-for="PostShortDescription" type="text" class="form-control create-post-form" id="" placeholder="Short Description">
+            <span asp-validation-for="PostShortDescription" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Tags"></label>
+            <input asp-for="Tags" type="text" class="form-control create-post-form" id="" placeholder="Tags">
+            <span asp-validation-for="Tags" class="text-danger"></span>
+        </div>
+
+        <textarea class="tinymce create-post-form" asp-for="PostBody"></textarea>
+        <span asp-validation-for="PostBody" class="text-danger"></span>
+        
+        <div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+        </div>
+    </form>
+</div>
