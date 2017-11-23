@@ -19,25 +19,23 @@ p.about {
     padding: 20px 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-family: 'Orbitron', sans-serif;
     color: white;
     font-weight: 800;
     font-size: 12px;
 }
 
-#brand {
-    color: white;
-    letter-spacing: 1.5px;
-    font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+#mainNav {
+    margin: 0;
+}
+
+a#brand {
     font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: white;
     font-weight: 800;
     font-size: 16px;
     padding-top: 20px;
-}
-
-#mainNav {
-    margin: 0;
 }
 
 #admin-nav {
@@ -49,12 +47,13 @@ p.about {
     padding-top: 80px;
 }
 
+/* Beginning of Heading */
+
 #header {
     background: linear-gradient(
       rgba(0, 0, 0, 0.6), 
       rgba(0, 0, 0, 0.6)),
       url('../images/posts.jpg') no-repeat center center;
-    height: 450px;
 }
 
 #headerContact {
@@ -62,7 +61,6 @@ p.about {
       rgba(0, 0, 0, 0.6), 
       rgba(0, 0, 0, 0.6)),
       url('../images/contact-min.jpg') no-repeat center center;
-    height: 450px;
 }
 
 #headerAbout{
@@ -70,7 +68,6 @@ p.about {
       rgba(0, 0, 0, 0.1), 
       rgba(0, 0, 0, 0.1)),
       url('../images/about.jpg') no-repeat center center;
-    height: 450px;
 }
 
 #header, #headerAbout, #headerContact {
@@ -81,6 +78,7 @@ p.about {
     background-size: cover;
     -o-background-size: cover;
     margin: -65px 0 80px 0;
+    height: 450px;
 }
 
 .site-heading {
@@ -109,6 +107,8 @@ p.about {
     font-weight: 600;
 }
 
+/* End of Heading */
+
 body {
     padding-bottom: 20px;
     font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -127,7 +127,7 @@ body {
 }
 
 #individual-post-body {
-    width: 75%;
+    width: 55%;
     margin: 0 auto;
 }
 
@@ -278,6 +278,20 @@ a div {
         border-radius: 0px;
         background-color: #0085a1;
         color: white;
+    }
+
+    ::-webkit-scrollbar {
+        width: 9px;
+    }
+     
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+     
+    ::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        background-color: #0085a1;
+        height: 5px;
     }
 
 @media (max-width: 1350px) {
