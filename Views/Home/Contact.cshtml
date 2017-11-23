@@ -32,27 +32,35 @@
                         <p class="help-block text-danger"></p>
                     </div>-->
 
-                    <div class="form-group">
-                        <label asp-for="Name"></label>
-                        <input asp-for="Name" type="text" class="form-control floating-label-form-group" placeholder="Name">
-                        <span asp-validation-for="Name" class="text-danger"></span>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label asp-for="Name"></label>
+                            <input asp-for="Name" type="text" class="form-control floating-label-form-group" placeholder="Name">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="Email"></label>
-                        <input asp-for="Email" type="email" class="form-control floating-label-form-group" placeholder="Email">
-                        <span asp-validation-for="Email" class="text-danger"></span>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" type="email" class="form-control floating-label-form-group" placeholder="Email">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="Message"></label>
-                        <textarea asp-for="Message" rows="5" class="form-control floating-label-form-group" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                        <span asp-validation-for="Email" class="text-danger"></span>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label asp-for="Message"></label>
+                            <textarea asp-for="Message" rows="5" class="form-control floating-label-form-group" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <br>
-                <div id="success"></div>
-                <div class="row">
-                    <div class="form-group col-xs-12">
-                        <button type="submit" class="btn btn-default">Send</button>
+                <div id="success">
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default">SEND</button>
+                        </div>
                     </div>
                 </div>
             </form>

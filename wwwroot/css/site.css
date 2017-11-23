@@ -20,6 +20,7 @@ p.about {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Orbitron', sans-serif;
     color: white;
     font-weight: 800;
     font-size: 12px;
@@ -29,6 +30,7 @@ p.about {
     color: white;
     letter-spacing: 1.5px;
     font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-weight: 800;
     font-size: 16px;
     padding-top: 20px;
@@ -42,26 +44,6 @@ p.about {
     background-color: #333;
     margin-bottom: 40px;
 }
-
-/*#mainNav {
-    position: absolute;
-    border-bottom: 1px solid #e9ecef;
-    background-color: white;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-    #mainNav .navbar-brand {
-      font-weight: 800;
-      color: #343a40; }
-    #mainNav .navbar-toggler {
-      font-size: 12px;
-      font-weight: 800;
-      padding: 13px;
-      text-transform: uppercase;
-      color: #343a40; }
-    #mainNav .navbar-nav > li.nav-item > a {
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase; }*/
 
 #create-post {
     padding-top: 80px;
@@ -139,14 +121,11 @@ body {
     padding-right: 15px;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+#index-body {
+    width: 35%;
+    margin: 0 auto;
 }
 
-#index-body,
 #individual-post-body {
     width: 75%;
     margin: 0 auto;
@@ -279,8 +258,38 @@ a div {
         transition: top 0.3s ease,opacity 0.3s ease;
     }
 
-#aboutContainer{
-    width: 75%;
+    #aboutContainer{
+        width: 75%;
+    }
+
+    #success .form-group {
+        text-align: center;
+    }
+
+    #success button.btn,
+    .links-row a {
+        margin-top: 15px;
+        padding: 15px 30px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 2px;
+
+        border-radius: 0px;
+        background-color: #0085a1;
+        color: white;
+    }
+
+@media (max-width: 1350px) {
+    #index-body {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1061px) {
+    #index-body {
+        width: 65%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -307,14 +316,42 @@ a div {
         font-size: 40px;
     }
 
+    #header, #headerAbout, #headerContact {
+        margin-bottom: 50px;
+    }
+
     #title-description {
         font-size: 16px;
+    }
+
+    #index-body {
+        width: 80%;
+    }
+
+    #aboutContainer {
+        width: 92%;
+    }
+
+    p.about {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 366px) {
     .tags {
         display: none;
+    }
+
+    #title-description {
+        font-size: 14px;
+    }
+
+    p#contact-title {
+        font-size: 20px;
+    }
+
+    #aboutContainer {
+        width: 92%;
     }
 }
 
