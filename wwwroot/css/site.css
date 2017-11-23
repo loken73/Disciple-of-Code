@@ -146,6 +146,12 @@ textarea {
     max-width: 280px;
 }
 
+#index-body,
+#individual-post-body {
+    width: 75%;
+    margin: 0 auto;
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
@@ -223,25 +229,6 @@ a div {
     padding: 0 25px;
 }
 
-@media screen and (min-width: 768px){
-    .navbar-inverse {
-       background-color: transparent;
-       border-color: transparent; 
-    }
-
-    a .preview-title {
-        font-size: 36px;
-    }
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
-
 .navbar-custom {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
@@ -294,4 +281,51 @@ a div {
 
 #aboutContainer{
     width: 75%;
+}
+
+@media (min-width: 768px) {
+    #mainNav {
+        background-color: transparent;
+        border-color: transparent; 
+     }
+}
+
+@media screen and (max-width: 768px) {
+    /* Hide captions */
+    .site-heading #blog-title {
+        font-size: 50px;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+
+    #mainNav {
+        background-color: green;
+    }
+}
+
+
+
+/*@media screen and (min-width: 769px){
+    #mainNav {
+       background-color: transparent;
+       border-color: transparent; 
+    }
+
+    a .preview-title {
+        font-size: 36px;
+    }
+}
+
+/* Hide/rearrange for smaller screens
+@media screen and (max-width: 768px) {
+    /* Hide captions 
+    .site-heading #blog-title {
+        font-size: 50px;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
 }

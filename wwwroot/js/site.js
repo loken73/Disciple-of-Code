@@ -49,6 +49,16 @@
       }*/
 
       console.log($(".create-post-form").val());
+
+      $("#individual-post-body").css({
+          "width": "80%",
+          "margin": "0 auto"
+      });
+
+      $("#index-body").css({
+          "width": "75%",
+          "margin": "0 auto"
+      });
   
   })(jQuery); // End of use strict
   
